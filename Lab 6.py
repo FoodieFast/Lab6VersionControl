@@ -6,6 +6,7 @@ def encode(password):
     return result
 # Goes through each digit of the password, adds 3, if greater 10, drops 10. Then added to result
 
+
 def main():
     while True:
         print("Menu")
@@ -25,14 +26,12 @@ def main():
             # Encodes
 
         elif user_input == "2":
-            pass
-
-            # Decodes
+            print(f"The encoded password is {encoded_password}, and the original password is {decode(encoded_password)}.")
+            # Decodes and prints output of both
 
         elif user_input == "3":
             break
-
-            # Quit
+            # Quits program
 
 
 if __name__ == "__main__":
