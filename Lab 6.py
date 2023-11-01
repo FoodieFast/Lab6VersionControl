@@ -4,7 +4,7 @@ def encode(password):
     for char in password:
         result += str((int(char) + 3) % 10)
     return result
-
+# Goes through each digit of the password, adds 3, if greater 10, drops 10. Then added to result
 
 def main():
     while True:
@@ -13,6 +13,7 @@ def main():
         print("1. Encode")
         print("2. Decode")
         print("3. Quit")
+        # Menu
 
         user_input = input("Please enter an option: ")
 
@@ -21,12 +22,20 @@ def main():
             encoded_password = encode(entered_password)
             print("Your password has been encoded and stored!")
             print(encoded_password)
+            # Encodes
 
         elif user_input == "2":
             pass
+
+            # Decodes
+
         elif user_input == "3":
             break
+
+            # Quit
 
 
 if __name__ == "__main__":
     main()
+
+    # Runs main
