@@ -1,10 +1,11 @@
-
+# Group Members: Ashidbilig Tamir, Eric Zhang
 def encode(password):
     result = ""
     for char in password:
         result += str((int(char) + 3) % 10)
     return result
 # Goes through each digit of the password, adds 3, if greater 10, drops 10. Then added to result
+
 
 def decode(encoded_password):
     decoded_password = ""
@@ -14,6 +15,7 @@ def decode(encoded_password):
         decoded_password = decoded_password + decoded_digit
     return decoded_password
 # returns the fully decoded password
+
 
 def main():
     while True:
@@ -43,5 +45,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
     # Runs main
